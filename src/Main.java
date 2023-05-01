@@ -46,10 +46,22 @@ public class Main {
     }
 
     private static void task3() {
-
+        System.out.println("Задача 3");
+        int [] arr = generateRandomArray();
+        int sum = 0;
+        for (int element: arr) {
+            sum += element;
+        }
+        int days = arr.length;
+        double averageSpending = (double) sum / days;
+        System.out.println(String.format("Средняя сумма трат за месяц составила %s рублей", averageSpending));
     }
 
     private static void task4() {
-
+        System.out.println("Задача 4");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
     }
 }
